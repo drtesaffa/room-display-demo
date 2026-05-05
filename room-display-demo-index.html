@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Room Display — Demo</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f5f5f5; margin: 0; padding: 2rem; }
+    h1 { color: #D94F1E; }
+    h2 { color: #333; margin-top: 2rem; }
+    .room-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1rem; }
+    .room-card {
+      background: white; border-radius: 12px; padding: 1.2rem;
+      text-decoration: none; color: #333; box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+    .room-card:hover { transform: translateY(-2px); box-shadow: 0 4px 16px rgba(0,0,0,0.15); }
+    .room-name { font-size: 1.1rem; font-weight: 700; margin-bottom: 0.3rem; }
+    .room-cap { font-size: 0.85rem; color: #888; }
+    .demo-badge { background: #888; color: white; font-size: 0.7rem; padding: 2px 6px; border-radius: 4px; margin-left: 6px; }
+    .note { background: #EFF6FF; border: 1px solid #BFDBFE; border-radius: 8px; padding: 1rem; margin-top: 2rem; font-size: 0.9rem; color: #1e40af; }
+  </style>
+</head>
+<body>
+  <h1>Room Display System — Demo</h1>
+  <p>This is a demonstration of the LOCAL: Room Display Panel. All data shown is sample data only.</p>
+
+  <h2>Select a Room</h2>
+  <div class="room-grid">
+    <a class="room-card" href="room-display-demo.html?room=boardroom">
+      <div class="room-name">Boardroom <span class="demo-badge">DEMO</span></div>
+      <div class="room-cap">Capacity: 20</div>
+    </a>
+    <a class="room-card" href="room-display-demo.html?room=meeting1">
+      <div class="room-name">Meeting Room 1 <span class="demo-badge">DEMO</span></div>
+      <div class="room-cap">Capacity: 6</div>
+    </a>
+    <a class="room-card" href="room-display-demo.html?room=meeting2">
+      <div class="room-name">Meeting Room 2 <span class="demo-badge">DEMO</span></div>
+      <div class="room-cap">Capacity: 7</div>
+    </a>
+    <a class="room-card" href="room-display-demo.html?room=meeting3">
+      <div class="room-name">Meeting Room 3 <span class="demo-badge">DEMO</span></div>
+      <div class="room-cap">Capacity: 4</div>
+    </a>
+    <a class="room-card" href="room-display-demo.html?room=wellness">
+      <div class="room-name">Wellness Room <span class="demo-badge">DEMO</span></div>
+      <div class="room-cap">Capacity: 1</div>
+    </a>
+    <a class="room-card" href="room-display-demo.html?room=quiet1">
+      <div class="room-name">Quiet Room 1 <span class="demo-badge">DEMO</span></div>
+      <div class="room-cap">Capacity: 1</div>
+    </a>
+  </div>
+
+  <div class="note">
+    <strong>Note:</strong> This is a demo version. No Microsoft 365 credentials are required.
+    All bookings shown are sample data. To deploy a live version connected to your Outlook calendar,
+    contact your IT team or MSP.
+  </div>
+</body>
+</html>
